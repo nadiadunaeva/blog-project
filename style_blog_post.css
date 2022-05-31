@@ -1,0 +1,277 @@
+/* Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Plus+Jakarta+Sans:wght@300&family=Poppins:wght@200&display=swap');
+
+/* All - grid */
+.container {
+font-size: 16px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto auto auto auto auto;
+grid-template-areas:
+"nm nm nm"
+"hd hd hd"
+"ct ct ct" 
+"main main main"
+"ft ft ft";
+}
+.navigmenu {
+grid-area: nm;
+}
+.header {
+grid-area: hd;
+}
+.article {
+grid-area: ct;
+}
+.content {
+grid-area: main;
+}
+.footer {
+grid-area: ft;
+}
+/* Navigation bar */
+.navigmenu {
+font-family: 'Lato', sans-serif;
+}
+ul {
+height: auto;
+display: flex;
+align-items: baseline;
+flex-direction: row;
+justify-content: right;
+list-style-type: none;
+gap: 5%;
+color: darkgrey;
+}
+ul li {
+background: #white;
+margin: 2px;
+color: darkgrey;
+}
+li.navbarlogo {
+margin-left: auto;
+}
+li.subscribe {
+border: 1px solid transparent;
+margin-right: auto;
+border-radius: 5px; 
+background-color: #1D2939;
+transition-duration: 0.4s;
+display: inline-block;
+}
+li.button1 {
+background-color: white; 
+color: black; 
+border: 2px solid #1D2939;
+}
+li.button1:hover {
+background-color: #1D2939;
+color: white;
+}
+ul a {
+display:block;
+width: 100%;
+height:100%;
+padding: 7px 15px 7px 15px;
+text-decoration: none;
+color: #1D2939;
+}
+a:hover {
+color: #ea9c28;
+}
+
+/* Header */
+h1 {
+font: bold 40px 'Plus Jakarta Sans', sans-serif;
+text-align: center;
+color: #ea9c28;
+} 
+h2, h3 {
+font: 14px 'Poppins', sans-serif;
+color: #1D2939;
+text-align: center;
+}
+.post {
+text-align: left;
+}
+.article {
+padding: 10px;
+margin:0 5% 0 5%;
+font: 16px 'Lato', sans-serif;
+font-weight: 300;
+text-align: justify;
+}
+.image4 {
+text-align: center;
+}
+.image4 img {
+max-width: 100%;
+max-height: 100%;
+}
+.text_article {
+font-style: italic;
+font-size: 22px;
+border-left: thick solid #ea9c28;
+margin: 20px;
+padding-left: 5px;
+}
+.additional_content {
+font: 25px 'Poppins', sans-serif;
+font-weight: 900;
+text-transform: uppercase;
+margin-top: 10px;
+text-align: center;
+}
+
+/* Content */
+.content {
+background: #f7f7f8;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+gap: 5px;
+font-size: 14px;
+justify-content: center;
+align-content: center;
+}
+.box {
+border: 1px solid lightgray;
+background:white;
+border-radius: 15px; 
+padding: 5px;
+flex-basis: auto;
+width: auto;
+font-family:  12px 'Lato', sans-serif;
+}
+.content_img{
+width: 100%;
+}
+.related_img{
+width: 200px;
+}
+
+/* Sharing */
+.social {
+text-align: center;
+margin: 20px 0px 30px 0px;
+}
+.social a {
+width: 30px;
+height: 30px;
+display: inline-block;
+margin: 8px;
+border-radius: 50%;
+font-size: 24px;
+color: #fff;
+opacity: 0.75;
+transition: opacity 0.15s linear;
+}
+.social a:hover {
+opacity: 1;
+}
+.social i {
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+} 
+.facebook {
+background: #3b5998;
+}
+.twitter {
+background: #55acee;
+}
+.linkedin {
+background: #0077b5;
+}
+.pinterest {
+background: #cb2027;
+}
+
+/* Footer */
+.footer{
+font: bold 16px 'Poppins', sans-serif;
+text-align: center;
+}
+.footer_headline {
+color: #ea9c28;
+}
+.footer_text {
+font-size: 14px; 
+}
+
+/* Footer Form */
+input[type=text], input[type=submit] {
+padding: 12px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+border-radius: 5px; 
+}
+input[type=submit] {
+background-color: #ea9c28;
+color: white;
+border: none;
+}
+input[type=submit]:hover {
+opacity: 0.8;
+}
+.newsletter {
+padding: 20px;
+}
+
+/*     Media Queries */
+/* Small Screens*/
+@media (max-width: 600px) {
+ul {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: space-between;
+}
+h1 {
+font: bold 26px 'Plus Jakarta Sans', sans-serif;
+} 
+h2 {
+font: 16px 'Poppins', sans-serif;
+}
+.box2 {
+display: none;
+}
+input[type=text], input[type=submit] {
+  width: 30%;
+}
+.newsletter_label {
+display: none;
+}
+}
+/* Medium Screens */
+@media (min-width: 601px) and (max-width:900px) {
+ul {
+height: auto;
+display: flex;
+align-items: baseline;
+flex-direction: row;
+justify-content: right;
+list-style-type: none;
+gap: 1%;
+color: darkgrey;
+}
+h1 {
+font: bold 30px 'Plus Jakarta Sans', sans-serif;
+} 
+h2 {
+font: 18px 'Poppins', sans-serif;
+}
+}
+/* Large Screens */
+@media (min-width:901px){
+.article {
+font-size: 18px;
+}
+.box {
+font-size: 16px;
+}
+}
