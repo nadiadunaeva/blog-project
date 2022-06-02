@@ -48,24 +48,26 @@ background: #white;
 margin: 2px;
 color: darkgrey;
 }
-li.navbarlogo {
+.navbarlogo {
 margin-left: auto;
+font: bold 25px 'Plus Jakarta Sans', sans-serif;
+text-shadow: 1px 5px #f4d29f; 
 }
 li.subscribe {
 border: 1px solid transparent;
 margin-right: auto;
 border-radius: 5px; 
-background-color: #1D2939;
+background-color: #1d293a;
 transition-duration: 0.4s;
 display: inline-block;
 }
 li.button1 {
 background-color: white; 
 color: black; 
-border: 2px solid #1D2939;
+border: 2px solid #1d293a;
 }
 li.button1:hover {
-background-color: #1D2939;
+background-color: #1d293a;
 color: white;
 }
 ul a{
@@ -74,10 +76,18 @@ width: 100%;
 height: 100%;
 padding: 7px 15px 7px 15px;
 text-decoration: none;
-color: #1D2939;
+color: #1d293a;
 }
 a:hover {
-color: #ea9c28;
+color: #f2a126;
+text-decoration: none;
+}   
+.post a:visited, .post a:link, .post a:active {
+text-decoration: none;
+color: #1d293a;
+}
+img {
+border-radius: 5%;
 }
 
 /* Header */
@@ -85,23 +95,23 @@ h1 {
 font: bold 40px 'Plus Jakarta Sans', sans-serif;
 text-align: center;
 background: linear-gradient(to right, #f32170,
- #ea9c28, #ea2eea, #eedd44);
+ #f2a126, #ea2eea, #eedd44);
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
 } 
 h2 {
 font: 20px 'Poppins', sans-serif;
-color: #1D2939;
+color: #1d293a;
 text-align: center;
 }
 
 /* Content */
 .content{
-  background: #f7f7f8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+background: #f7f7f8;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
 }
 .box{
 border: 1px solid lightgray;
@@ -122,7 +132,7 @@ font: bold 16px 'Poppins', sans-serif;
 text-align: center;
 }
 .footer_headline {
-color: #ea9c28;
+color: #f2a126;
 }
 .footer_text {
 font-size: 14px; 
