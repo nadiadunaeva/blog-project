@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Plus+Jakarta+Sans:wght@300&family=Poppins:wght@200&display=swap');
+
+/* Footer */
+.footer{
+font: 16px 'Poppins', sans-serif;
+text-align: center;
+}
+.footer_headline {
+color: #f2a126;
+}
+.footer_text {
+font-size: 14px; 
+}
+
+/* Footer Form */
+input[type=text], input[type=submit] {
+padding: 12px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+border-radius: 5px; 
+}
+input[type=submit] {
+background-color: #ea9c28;
+color: white;
+border: none;
+}
+input[type=submit]:hover {
+opacity: 0.8;
+}
+.newsletter {
+padding: 20px;
+}
