@@ -1,6 +1,6 @@
-@import url("/css/fonts.css"); 
-@import url("/css/navigmenu.css");
-@import url("/css/footer.css");
+@import url("navigmenu.css"); 
+@import url("fonts.css"); 
+@import url("footer.css");
 
 /* Grid */
 .container {
