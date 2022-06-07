@@ -1,120 +1,122 @@
-/* Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Plus+Jakarta+Sans:wght@300&family=Poppins:wght@200&display=swap');
+@import url("/css/footer.css");
+@import url("/css/navigmenu.css");
+@import url("/css/fonts.css");
 
 /* Grid */
 .container {
-font-size: 16px;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: auto auto auto auto;
-height:100vh;
-grid-template-areas:
-"nm nm nm"
-"hd hd hd"
-"main main main"
-"ft ft ft";
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    height: 100vh;
+    grid-template-areas:
+        "nm nm nm"
+        "hd hd hd"
+        "main main main"
+        "ft ft ft";
 }
 .navigmenu {
-grid-area: nm;
+    grid-area: nm;
 }
 .header {
-grid-area: hd;
+    grid-area: hd;
 }
 .content {
-grid-area: main;
+    grid-area: main;
 }
 .footer {
-grid-area: ft;
+    grid-area: ft;
 }
 
 /* Header */
 h1 {
-font: 40px 'Plus Jakarta Sans', sans-serif;
-text-align: center;
-background: linear-gradient(to right, #f32170,
- #f2a126, #ea2eea, #eedd44);
--webkit-text-fill-color: transparent;
--webkit-background-clip: text;
-} 
+    font: 40px "Plus Jakarta Sans", sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #f32170, #f2a126, #ea2eea, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 h2 {
-font: 20px 'Poppins', sans-serif;
-color: #1d293a;
-text-align: center;
+    font: 20px "Poppins", sans-serif;
+    color: #1d293a;
+    text-align: center;
 }
 
 /* Content */
-.content{
-background: #f7f7f8;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;
+.content {
+    background: #f7f7f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
-.box{
-border: 1px solid lightgray;
-background:white;
-border-radius: 15px; 
-padding: 5px;
-flex-basis: auto;
-width: auto;
-font: 18px 'Lato', sans-serif;
+.box {
+    border: 1px solid lightgray;
+    background: white;
+    border-radius: 15px;
+    padding: 5px;
+    flex-basis: auto;
+    width: auto;
+    font: 18px "Lato", sans-serif;
 }
-.content_img{
-width: 40%;
+.content_img {
+    width: 40%;
+}
+figure {
+    margin-left: 0px;
 }
 
 /*  Media Queries */
 /* Small Screens*/
 @media (max-width: 600px) {
-ul {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-align-content: space-between;
-}
-h1 {
-font: 26px 'Plus Jakarta Sans', sans-serif;
-} 
-h2 {
-font: 16px 'Poppins', sans-serif;
-}
-.box {
-font: 14px 'Lato', sans-serif;
-}
-input[type=text], input[type=submit] {
-width: 30%;
-}
-.newsletter_label {
-display: none;
-}
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    h1 {
+        font: 26px "Plus Jakarta Sans", sans-serif;
+    }
+    h2 {
+        font: 16px "Poppins", sans-serif;
+    }
+    .box {
+        font: 14px "Lato", sans-serif;
+    }
+    input[type="text"],
+    input[type="submit"] {
+        width: 30%;
+    }
+    .newsletter_label {
+        display: none;
+    }
 }
 /* Medium Screens */
 @media (min-width: 601px) and (max-width: 900px) {
-ul {
-height: auto;
-display: flex;
-align-items: baseline;
-flex-direction: row;
-justify-content: right;
-list-style-type: none;
-gap: 1%;
-color: darkgrey;
-}
-h1 {
-font: 30px 'Plus Jakarta Sans', sans-serif;
-} 
-h2 {
-font: 18px 'Poppins', sans-serif;
-}
+    ul {
+        height: auto;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: right;
+        list-style-type: none;
+        gap: 1%;
+        color: darkgrey;
+    }
+    h1 {
+        font: 30px "Plus Jakarta Sans", sans-serif;
+    }
+    h2 {
+        font: 18px "Poppins", sans-serif;
+    }
 }
 /* Large Screens */
 @media (min-width: 901px) {
-.container {
-font-size: 18px;
-}
-.content_img{
-width: 50%;
-}
+    .container {
+        font-size: 18px;
+    }
+    .content_img {
+        width: 50%;
+    }
 }
