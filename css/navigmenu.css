@@ -5,7 +5,7 @@ font-family: 'Lato', sans-serif;
 ul {
 height: auto;
 display: flex;
-align-items: center;
+align-items: baseline;
 flex-direction: row;
 justify-content: center;
 list-style-type: none;

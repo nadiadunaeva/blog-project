@@ -224,9 +224,6 @@ h3 {
 }
 /* Large Screens */
 @media (min-width: 901px) {
-    .container {
-        font-size: 18px;
-    }
     .content_img {
         width: 50%;
     }
