@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style_posts.css">
+  <title>Blog Homepage</title>
+</head>
+<body>
+  <!--  Navigation    -->
+  <div class="container">
+    <div class="navigmenu">
+      <ul>
+        <li class="navbarlogo"><a href="index.html"><b>Personal</b></a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li><a href="about_author.html">About Author</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li class="subscribe button1"><a href="index.html">Subscribe</a></li>
+      </ul>
+    </div>
+    <!--  Header    -->
+    <div class="header">
+      <h1><b>Daily Digest</b></h1>
+      <h2>A description of the respective category goes right here.<br>
+     Be as expressive as possible, but in brief.</h2>
+    </div>
+    <!--  Main    -->
+    <div class="content">
+        <div class="main_box">
+            <div class="content_buttons">
+         <div class="daily_news_button">August 2021</div>
+         <div class="dropdown content_filter">
+          <button onclick="myFunction()" class="dropbtn">Filter By:</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Most resent</a>
+            <a href="#about">Most popular</a>
+          </div>
+        </div>
+         <!-- <div class="content_filter">Filter by:</div>  -->
+        </div>  
+      <div class="box">
+        <p>AUGUST 13, 2021</p>
+        <p class="author_name">by Nikola Tyrone</p>
+        <figure>
+          <img src="img/1.jpg" alt="Image" class="content_img">
+          <figcaption>Picture Caption</figcaption>
+        </figure>
+        <h3 class="post"><a href="blog-post.html">10 Funny Cartoon Series That Depict Real Life Of Programmers</a></h3>
+        <p>The first line of the article, which will help the reader quickly understand what is at stake.</p>
+      </div>
+      <div class="box">
+        <p>AUGUST 13, 2021</p>
+        <p class="author_name">by Nikola Tyrone</p>
+        <figure>
+          <img src="img/2.jpg" alt="Image" class="content_img">
+          <figcaption>Picture Caption</figcaption>
+        </figure>
+        <h3 class="post">Top 10 Programming Languages In 2022: Short Description</h3>
+        <p>The first line of the article, which will help the reader quickly understand what is at stake.</p>
+      </div>
+      <div class="box">
+        <p>AUGUST 13, 2021 </p>
+        <p class="author_name">by Nikola Tyrone </p>
+        <figure>
+          <img src="img/3.jpg" alt="Image" class="content_img">
+          <figcaption>Picture Caption</figcaption>
+        </figure>
+        <h3 class="post">New NFT Project That Broke the Internet in June</h3>
+        <p>The first line of the article, which will help the reader quickly understand what is at stake.</p>
+      </div>
+      <div class="content_button">
+        <button id="toggle" class="load_more_button" data-divs="add_block_1,add_block_2,add_block_3">Explore more articles</button>
+    </div> 
+    <div target='add_block_1' name='add_block_1'  id='add_block_1'>
+      <div class="box">
+        <p>AUGUST 13, 2021</p>
+        <p class="author_name">by Nikola Tyrone</p>
+        <figure>
+          <img src="img/1.jpg" alt="Image" class="content_img">
+          <figcaption>Picture Caption</figcaption>
+        </figure>
+        <h3 class="post"><a href="blog-post.html">10 Funny Cartoon Series That Depict Real Life Of Programmers</a></h3>
+        <p>The first line of the article, which will help the reader quickly understand what is at stake.</p>
+      </div>
+    </div> 
+    <div target='add_block_2' name='add_block_2'  id='add_block_2'> 
+      <div class="box">
+        <p>AUGUST 13, 2021</p>
+        <p class="author_name">by Nikola Tyrone</p>
+        <figure>
+          <img src="img/2.jpg" alt="Image" class="content_img">
+          <figcaption>Picture Caption</figcaption>
+        </figure>
+        <h3 class="post">Top 10 Programming Languages In 2022: Short Description</h3>
+        <p>The first line of the article, which will help the reader quickly understand what is at stake.</p>
+      </div>
+    </div>
+    <div target='add_block_3' name='add_block_3'  id='add_block_3'> 
+      <div class="box">
+        <p>AUGUST 13, 2021 </p>
+        <p class="author_name">by Nikola Tyrone </p>
+        <figure>
+          <img src="img/3.jpg" alt="Image" class="content_img">
+          <figcaption>Picture Caption</figcaption>
+        </figure>
+        <h3 class="post">New NFT Project That Broke the Internet in June</h3>
+        <p>The first line of the article, which will help the reader quickly understand what is at stake.</p>
+      </div>
+    </div>
+    <script src="script/test.js"></script>
+  </div>
+</div>
+    <!--  Footer   -->
+    <div class="footer">
+      <h4 class="footer_headline">Personal Newsletter</h4>
+      <p class="footer_text">A weekly newsletter covering programming, front end <br> and everything related to career
+        development.</p>
+      <form action="/example.php" target="_blank" method="post">
+        <div class="newsletter">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email" name="mail" required>
+          <input type="submit" value="Subscribe">
+          <label><input type="checkbox" checked="checked" name="subscribe">Weekly Newsletter
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

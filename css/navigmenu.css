@@ -5,12 +5,13 @@ font-family: 'Lato', sans-serif;
 ul {
 height: auto;
 display: flex;
-align-items: baseline;
+align-items: center;
 flex-direction: row;
-justify-content: right;
+justify-content: center;
 list-style-type: none;
 gap: 5%;
 color: darkgrey;
+padding-left: 0px;
 }
 ul li {
 background: #white;
@@ -18,13 +19,13 @@ margin: 2px;
 color: darkgrey;
 }
 .navbarlogo {
-margin-left: auto;
+/* margin-left: auto; */
 font: 25px 'Plus Jakarta Sans', sans-serif;
 text-shadow: 1px 5px #f4d29f; 
 }
 li.subscribe {
 border: 1px solid transparent;
-margin-right: auto;
+/* margin-right: auto; */
 border-radius: 5px; 
 background-color: #1d293a;
 transition-duration: 0.4s;

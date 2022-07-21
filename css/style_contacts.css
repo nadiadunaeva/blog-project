@@ -1,0 +1,293 @@
+@import url("navigmenu.css"); 
+@import url("fonts.css"); 
+@import url("footer.css");
+
+/* Grid */
+.container {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "nm nm nm"
+        "ct ct ct"
+        /* "main main main" */
+        "ft ft ft";
+}
+.navigmenu {
+    grid-area: nm;
+}
+.contact_main {
+    grid-area: ct;
+}
+.footer {
+    grid-area: ft;
+}
+body {
+    margin: 0px;
+}
+
+/* Header */
+h1 {
+    font: 30px "Plus Jakarta Sans", sans-serif;
+    text-align: center;
+    color: #f2a126;
+    font-weight: 700;
+}
+h2,
+h3 {
+    font: 20px  "Poppins", sans-serif;
+    color: #1d293a;
+    text-align: left;
+}
+.post {
+    text-align: left;
+}
+.contact_main {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    height: auto;
+    background-color: #f7f7f8;
+    padding: 50px 0px 50px 0px;
+} 
+.author_pic {
+    text-align: center;
+    margin-left: 50px;
+} 
+.autor_text{
+    flex: 1; 
+    text-align: left;
+    margin-right: 50px;
+}
+figure {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+}
+.author_pic img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.additional_content {
+    font: 25px "Poppins", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+.contact_text{
+flex:1;
+margin-right: 50px;
+text-align: left;
+}
+.contact_form{
+flex:1;
+margin-left: 50px;
+}
+
+/* Sharing  */
+.social {
+    text-align: left;
+    margin: 30px 0px 30px 0px;
+}
+.social img {
+    border-radius: 30px;
+    width: auto;
+    height: 40px;
+}
+.social a {
+    margin: 8px;
+    opacity: 0.7;
+    transition: opacity 0.5s linear;
+}
+.social a:hover {
+    opacity: 1;
+}
+
+/* Contact Form  */
+  input[type=text]#fname {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f7f7f8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=text]#lname {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f7f7f8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=text]#fname {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f7f7f8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=text]#lname {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f7f7f8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f7f7f8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f7f7f8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #f2a126;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  input[type=submit]:hover {
+      opacity: 0.9;
+  }
+  .contact_container {
+    border-radius: 8px;
+    background-color: #f7f7f8;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  #message {
+      height: 20%;
+  }
+
+/*     Media Queries */
+/* Small Screens*/
+@media (max-width: 600px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    h1 {
+        font: 20px "Plus Jakarta Sans", sans-serif;
+        text-align: center;
+        color: #f2a126;
+        font-weight: 700;
+    }
+    h2 {
+        font: 16px "Poppins", sans-serif;
+    }
+    .box2 {
+        display: none;
+    }
+    input[type="text"],
+    input[type="submit"] {
+        width: 30%;
+    }
+    .newsletter_label {
+        display: none;
+    }
+    .autor_text {
+        margin: 0px 20px 0px 20px;
+    }
+    .social {
+        text-align: center;
+    }
+    .author_pic {
+        margin-left: 0px;
+    }
+    h1 {
+        font: 20px "Plus Jakarta Sans", sans-serif;
+        text-align: center;
+        color: #f2a126;
+        font-weight: 700;
+    }
+    .contact_main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .contact_form,.contact_text  {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .navbarlogo {
+        font: 20px 'Plus Jakarta Sans', sans-serif;
+    }
+}
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 900px) {
+    ul {
+        height: auto;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        gap: 1%;
+        color: darkgrey;
+    }
+    h1 {
+        font: 30px "Plus Jakarta Sans", sans-serif;
+        text-align: center;
+            color: #f2a126;
+            font-weight: 700;
+    }
+    h2 {
+        font: 18px "Poppins", sans-serif;
+    }
+    .autor_text {
+        margin: 0px 20px 0px 20px;
+    }
+    .social {
+        text-align: left;
+    }
+    .author_pic {
+        margin-left: 20px;
+        flex: 1;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+    .contact_main {
+        font-size: 18px;
+    }
+    .box {
+        font-size: 18px;
+    }
+}

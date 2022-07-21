@@ -4,74 +4,72 @@
 
 /* Grid */
 .container {
-    overflow: scroll;
     font-size: 16px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
         "nm nm nm"
-        "hd hd hd"
         "ct ct ct"
-        "main main main"
-        "ft ft ft";
+        "ft ft ft"; 
 }
 .navigmenu {
     grid-area: nm;
 }
-.header {
-    grid-area: hd;
-}
-.article {
+.main_author {
     grid-area: ct;
-}
-.content {
-    grid-area: main;
 }
 .footer {
     grid-area: ft;
 }
-body {
-    margin: 0px;
-}
 
 /* Header */
 h1 {
-    font: 40px "Plus Jakarta Sans", sans-serif;
-    text-align: center;
+    font: 30px "Plus Jakarta Sans", sans-serif;
+    text-align: left;
     color: #f2a126;
+    font-weight: 700;
 }
 h2,
 h3 {
-    font: 14px "Poppins", sans-serif;
+    font: 20px  "Poppins", sans-serif;
     color: #1d293a;
-    text-align: center;
+    text-align: left;
 }
 .post {
     text-align: left;
 }
-.article {
-    padding: 10px;
-    margin: 0 5% 0 5%;
-    font: 16px "Lato", sans-serif;
-    font-weight: 300;
-    text-align: justify;
+.main_author {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    height: auto;
+    background-color: #f7f7f8;
+    padding: 50px 0px 50px 0px;
 } 
-.image4 {
+.author_pic {
     text-align: center;
-    margin-bottom: 30px;
+    margin-left: 50px;
 } 
-.image4 img{
+.autor_text{
+    flex: 1; 
+    text-align: left;
+    margin-right: 50px;
+}
+figure {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+}
+.author_pic img{
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
     text-align: center;
-}
-.text_article {
-    font-size: 22px;
-    border-left: thick solid #f2a126;
-    margin: 20px;
-    padding-left: 5px;
 }
 .additional_content {
     font: 25px "Poppins", sans-serif;
@@ -80,41 +78,13 @@ h3 {
     margin: 10px 0px 10px 0px;
     text-align: center;
 }
-
-/* Content */
-.content {
-    background: #f7f7f8;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
-    justify-content: center;
-    align-content: center;
-}
-.box {
-    border: 1px solid lightgray;
-    background: white;
-    border-radius: 15px;
-    padding: 5px;
-    flex-basis: auto;
-    width: auto;
-    font-family: 12px "Lato", sans-serif;
-    box-sizing: border-box;
-}
-.content_img {
-    width: 100%;
-}
-.related_img {
-    width: 200px;
-}
-figure {
-    margin-left: 0px;
+body {
+    margin: 0px;
 }
 
 /* Sharing  */
 .social {
-    text-align: center;
+    text-align: left;
     margin: 30px 0px 30px 0px;
 }
 .social img {
@@ -141,7 +111,10 @@ figure {
         align-content: center;
     }
     h1 {
-        font: 26px "Plus Jakarta Sans", sans-serif;
+        font: 20px "Plus Jakarta Sans", sans-serif;
+        text-align: left;
+        color: #f2a126;
+        font-weight: 700;
     }
     h2 {
         font: 16px "Poppins", sans-serif;
@@ -156,12 +129,38 @@ figure {
     .newsletter_label {
         display: none;
     }
-    .box{
-        box-sizing: border-box;
+    .autor_text {
+        margin: 0px 20px 0px 20px;
     }
-    .navbarlogo {
-        font: 20px 'Plus Jakarta Sans', sans-serif;
+    .social {
+        text-align: center;
     }
+    .author_pic {
+        margin-left: 0px;
+    }
+    h1 {
+        font: 20px "Plus Jakarta Sans", sans-serif;
+        text-align: center;
+        color: #f2a126;
+        font-weight: 700;
+    }
+    .main_author {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+      .contact_form,.contact_text  {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+ fugure {
+    margin-right: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+ }
+ .navbarlogo {
+    font: 20px 'Plus Jakarta Sans', sans-serif;
+}
 }
 /* Medium Screens */
 @media (min-width: 601px) and (max-width: 900px) {
@@ -177,14 +176,35 @@ figure {
     }
     h1 {
         font: 30px "Plus Jakarta Sans", sans-serif;
+        text-align: center;
+            color: #f2a126;
+            font-weight: 700;
     }
     h2 {
         font: 18px "Poppins", sans-serif;
     }
+    .autor_text {
+        margin: 0px 20px 0px 20px;
+    }
+    .social {
+        text-align: left;
+    }
+    .author_pic {
+        margin-left: 20px;
+        flex: 1;
+    }
+    figure{
+        margin-right: 0px;    
+    }
+    .main_author{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 }
+
 /* Large Screens */
 @media (min-width: 901px) {
-    .article {
+    .main_author {
         font-size: 18px;
     }
     .box {

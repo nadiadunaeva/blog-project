@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto auto;
-    height: 100vh;
+    height: auto;
     grid-template-areas:
         "nm nm nm"
         "hd hd hd"
@@ -30,13 +30,12 @@
 body {
     margin: 0px;
 }
+
 /* Header */
 h1 {
     font: 40px "Plus Jakarta Sans", sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #f32170, #f2a126, #ea2eea, #eedd44);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: #f2a126;
 }
 h2 {
     font: 20px "Poppins", sans-serif;
@@ -50,6 +49,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 .box {
     border: 1px solid lightgray;
@@ -62,20 +62,111 @@ h2 {
     padding-right: 20px;
     box-sizing: border-box;
 }
-.author_name {
-    font: italic 12px "Lato", sans-serif;
-}
 .content_img {
     width: 40%;
 }
 figure {
-    margin-inline-start: 0px; 
+    margin-inline-start: 0px;  //added
     margin-inline-end: 0px;
     margin-right: 0px;
 }
 p {
     margin-block-start: 0px;
 }
+h3 {
+    margin-block-start: 0px;
+    margin-block-end: 10px;
+}
+.author_name{
+    font: italic 12px "Lato", sans-serif;
+}
+.main_box {
+    height: fit-content; 
+    /* border: 1px solid black; */
+}
+.content_buttons { 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    flex-basis: auto;
+    cursor: pointer;
+}
+.daily_news_button, .content_filter {
+    border: 1px solid lightgray;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    flex-basis: auto;
+    width: auto;
+    font: 16px "Lato", sans-serif;
+    text-align: center;
+    /* cursor: pointer; */
+}
+
+.content_button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.load_more_button { 
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    font: 16px "Lato", sans-serif;
+    border: 1px solid lightgray;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* Filer By dropdown */
+
+.dropbtn {
+    border: 1px solid white;
+    background: white;
+    border-radius: 8px;
+    /* padding: 8px; */
+    flex-basis: auto;
+    width: auto;
+    font: 16px "Lato", sans-serif;
+    text-align: center;
+    cursor: pointer;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      float: right;
+    }
+    
+ .dropdown-content {
+      background: white;
+      border-radius: 8px;
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      right: 0;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown a:hover {background-color: #ddd;}
+    
+    .show {display: block;}
 
 /*  Media Queries */
 /* Small Screens*/
@@ -85,7 +176,6 @@ p {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-        justify-content: center;
     }
     h1 {
         font: 26px "Plus Jakarta Sans", sans-serif;
@@ -102,6 +192,9 @@ p {
     }
     .newsletter_label {
         display: none;
+    }
+    .box {
+        font: 14px "Lato", sans-serif;
     }
     .navbarlogo {
         font: 20px 'Plus Jakarta Sans', sans-serif;
