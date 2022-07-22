@@ -5,7 +5,7 @@
 /* Grid */
 .container {
     font-size: 16px;
-    overflow: hidden;
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
