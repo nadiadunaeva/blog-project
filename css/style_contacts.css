@@ -39,7 +39,7 @@ h2,
 h3 {
     font: 20px  "Poppins", sans-serif;
     color: #1d293a;
-    text-align: left;
+    text-align: center;
 }
 .post {
     text-align: left;
@@ -289,3 +289,4 @@ margin-left: 50px;
         font-size: 18px;
     }
 }
+

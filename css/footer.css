@@ -31,3 +31,12 @@ opacity: 0.8;
 padding: 20px;
 }
 
+.footer_copy{
+font-size: 12px;
+text-align: center;
+margin-bottom: 20px;
+}
+.copy_img{
+ width: 10px;
+ alignment-baseline: baseline;
+}

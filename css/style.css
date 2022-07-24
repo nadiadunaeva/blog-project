@@ -32,10 +32,14 @@ body {
     margin: 0px;
 }
 /* Header */
+.header{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
 h1 {
-    font: 40px "Plus Jakarta Sans", sans-serif;
+    font: 50px "Plus Jakarta Sans", sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #f32170, #f2a126, #ea2eea, #eedd44);
+    /* background: linear-gradient(to right, #f32170, #f2a126, #ea2eea, #eedd44); */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -136,3 +140,44 @@ p {
         width: 50%;
     }
 }
+
+/* Animation */
+.animate-charcter
+{
+ background: linear-gradient(-100deg, #f32170, #f2a126, #ea2eea, #eedd44); 
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text_anim 10s linear infinite;
+  animation-direction: reverse;
+  text-transform: uppercase; 
+}
+@keyframes text_anim {
+  to {
+    background-position: 200% center ;
+  }
+}
+
+/* Pagination */
+.pagination {
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .pagination a.active {
+    background-color: #f2a126;
+    color: white;
+    border-radius: 5px;
+  }
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }

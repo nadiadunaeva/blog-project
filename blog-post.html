@@ -16,7 +16,19 @@
         <li><a href="posts.html">Posts</a></li>
         <li><a href="about_author.html">About Author</a></li>
         <li><a href="contact.html">Contacts</a></li>
-        <li class="subscribe button1"><a href="index.html">Subscribe</a></li>
+        <li class="subscribe button1 trigger"><a>Subscribe</a></li>
+        <!-- The Modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">×</span>
+                <h2> Hello, 👋 friend!</h2>
+                <div class="modal-text">Please, subscribe by clicking on button below</div>
+                <div class="newsletter modal_newsletter">
+                  <input type="text" placeholder="Email" name="mail" required>
+                  <input type="submit" value="Subscribe">
+                </div>
+              </div>
+        </div>
       </ul>
     </div>
     <!--  Header    -->
@@ -100,6 +112,7 @@
         <h3 class="post"><b>Top 10 Programming Languages In 2022: Short Description</b></h3>
         <p>Redefined the user acquisition and redesined the onboarding experience, all within 3 working weeks.</p>
       </div>
+      <script src="script/script_modal.js"></script>
     </div>
     <!--  Footer   -->
     <div class="footer">
@@ -116,8 +129,8 @@
           </label>
         </div>
       </form>
+      <div class="footer_copy">Copyright 2022 <img src="img/copyright.png" alt="Image" class="copy_img"></div>
     </div>
   </div>
 </body>
-
 </html>

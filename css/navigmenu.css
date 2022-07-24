@@ -21,7 +21,7 @@ color: darkgrey;
 .navbarlogo {
 /* margin-left: auto; */
 font: 25px 'Plus Jakarta Sans', sans-serif;
-text-shadow: 1px 5px #f4d29f; 
+text-shadow: 1px 1px #f4d29f; 
 }
 li.subscribe {
 border: 1px solid transparent;
@@ -60,3 +60,74 @@ img {
 border-radius: 5%;
 }
 
+/*  Modal Subscribe */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #f2a126;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    border: 1px solid #848484;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-text{
+    text-align: center;   
+}
+.modal_newsletter {
+    display: flex;
+    flex-direction: column; 
+}
+
+@media (max-width: 600px) {
+    .modal_newsletter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: center;
+        align-items: center;
+    }  
+
+    .modal-content {
+        width: fit-content;
+}
+}

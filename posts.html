@@ -15,7 +15,20 @@
         <li><a href="posts.html">Posts</a></li>
         <li><a href="about_author.html">About Author</a></li>
         <li><a href="contact.html">Contacts</a></li>
-        <li class="subscribe button1"><a href="index.html">Subscribe</a></li>
+ 
+        <li class="subscribe button1 trigger"><a>Subscribe</a></li>
+        <!-- The Modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">×</span>
+                <h2> Hello, 👋 friend!</h2>
+                <div class="modal-text">Please, subscribe by clicking on button below</div>
+                <div class="newsletter modal_newsletter">
+                  <input type="text" placeholder="Email" name="mail" required>
+                  <input type="submit" value="Subscribe">
+                </div>
+              </div>
+        </div>
       </ul>
     </div>
     <!--  Header    -->
@@ -27,22 +40,23 @@
     <!--  Main    -->
     <div class="content">
         <div class="main_box">
-            <div class="content_buttons">
-         <div class="daily_news_button">August 2021</div>
+        <div class="content_buttons">
+         <form>
+          <input class="search_button" type="text" name="search" placeholder="Search..">
+        </form>       
          <div class="dropdown content_filter">
           <button onclick="myFunction()" class="dropbtn">Filter By:</button>
           <div id="myDropdown" class="dropdown-content">
-            <a href="#home">Most resent</a>
-            <a href="#about">Most popular</a>
+            <a href="#">Most resent</a>
+            <a href="#">Most popular</a>
           </div>
         </div>
-         <!-- <div class="content_filter">Filter by:</div>  -->
         </div>  
       <div class="box">
         <p>AUGUST 13, 2021</p>
         <p class="author_name">by Nikola Tyrone</p>
         <figure>
-          <img src="img/1.jpg" alt="Image" class="content_img">
+          <img src="img/3.jpg" alt="Image" class="content_img">
           <figcaption>Picture Caption</figcaption>
         </figure>
         <h3 class="post"><a href="blog-post.html">10 Funny Cartoon Series That Depict Real Life Of Programmers</a></h3>
@@ -62,7 +76,7 @@
         <p>AUGUST 13, 2021 </p>
         <p class="author_name">by Nikola Tyrone </p>
         <figure>
-          <img src="img/3.jpg" alt="Image" class="content_img">
+          <img src="img/1.jpg" alt="Image" class="content_img">
           <figcaption>Picture Caption</figcaption>
         </figure>
         <h3 class="post">New NFT Project That Broke the Internet in June</h3>
@@ -107,6 +121,7 @@
         <p>The first line of the article, which will help the reader quickly understand what is at stake.</p>
       </div>
     </div>
+    <script src="script/script_modal.js"></script>
     <script src="script/test.js"></script>
   </div>
 </div>
@@ -124,6 +139,7 @@
           </label>
         </div>
       </form>
+      <div class="footer_copy">Copyright 2022 <img src="img/copyright.png" alt="Image" class="copy_img"></div>
     </div>
   </div>
 </body>
