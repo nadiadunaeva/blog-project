@@ -1,2 +1,2 @@
 # blog-project
-Personal blog website project
+🌐 Personal blog website project
